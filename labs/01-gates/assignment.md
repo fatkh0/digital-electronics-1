@@ -3,12 +3,10 @@
 ### De Morgan's laws
 
 1. Equations of all three versions of logic function f(c,b,a):
-   
-  \[
-E = mc^2
-\]
+  
 
-![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
+![Logic function](images/equations.png)
+
 
 2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
