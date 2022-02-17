@@ -38,10 +38,10 @@ end architecture dataflow;
 
 [https://www.edaplayground.com/x/gsnW](https://www.edaplayground.com/x/gsnW)
 
+![distributive_laws_functions](images/distributive_laws_functions.png)
 
 
-
-   ![your figure](images/distributive_laws_graph.png)
+   ![distributive_laws_graph](images/distributive_laws_graph.png)
 
 2. Link to your public EDA Playground example:
 
