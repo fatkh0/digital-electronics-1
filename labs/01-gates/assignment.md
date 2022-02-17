@@ -40,5 +40,5 @@ end architecture dataflow;
 
 2. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
+   [https://www.edaplayground.com/x/DzHt](https://www.edaplayground.com/x/DzHt)
 
