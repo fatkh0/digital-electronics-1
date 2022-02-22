@@ -33,11 +33,14 @@
         s_a <= "1000"; -- Such as "1000" if ID = xxxx56
         wait for 100 ns;
         -- Expected output
-        assert ((s_B_greater_A = '0') and
-                (s_B_equals_A  = '0') and
-                (s_B_less_A    = '1'))
-        -- If false, then report an error
-        report "Input combination COMPLETE_THIS_TEXT FAILED" severity error;
+        assert (s_B_greater_A = '1')
+        report "Input combination 0110, 1000. B is greater then A FAILED" severity error;
+        
+        assert (s_B_less_A    = '1')
+        report "Input combination 0110, 1000. B is less then A FAILED" severity error;
+        
+        assert (s_B_equals_A  = '1') 
+        report "Input combination 0110, 1000. B is equals then A FAILED" severity error;
 
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
