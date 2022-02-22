@@ -40,7 +40,7 @@
         report "Input combination 0110, 1000. B is less then A FAILED" severity error;
         
         assert (s_B_equals_A  = '1') 
-        report "Input combination 0110, 1000. B is equals then A FAILED" severity error;
+        report "Input combination 0110, 1000. B is equals A FAILED" severity error;
 
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
