@@ -50,6 +50,7 @@
 
 2. Text console screenshot during your simulation, including reports.
 
+   ![Logic functions](images/4bit-console.png)
    ![Logic functions](images/4bit.png)
 
 3. Link to your public EDA Playground example:
