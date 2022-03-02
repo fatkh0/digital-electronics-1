@@ -1,0 +1,9 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto d6aa86d6bb354e60be8b7a7a456fc9c2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot mux_3bit_4to1_behav xil_defaultlib.mux_3bit_4to1 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-494] choice "000" should have 2 elements [C:/Users/newDefaultTest/Desktop/03-vivado/labs/03-vivado/multiplexer/multiplexer.srcs/sources_1/new/mux_3bit_4to1.vhd:48]
+ERROR: [VRFC 10-494] choice "001" should have 2 elements [C:/Users/newDefaultTest/Desktop/03-vivado/labs/03-vivado/multiplexer/multiplexer.srcs/sources_1/new/mux_3bit_4to1.vhd:49]
+ERROR: [VRFC 10-494] choice "010" should have 2 elements [C:/Users/newDefaultTest/Desktop/03-vivado/labs/03-vivado/multiplexer/multiplexer.srcs/sources_1/new/mux_3bit_4to1.vhd:50]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit mux_3bit_4to1 in library work failed.
