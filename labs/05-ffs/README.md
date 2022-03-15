@@ -36,8 +36,8 @@
    | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
    | ![rising](images/eq_uparrow.png) | 0 | 0 | 0 | Output did not change |
-   | ![rising](images/eq_uparrow.png) | 0 | 1 |  |  |
-   | ![rising](images/eq_uparrow.png) | 1 |  |  |  |
-   | ![rising](images/eq_uparrow.png) | 1 |  |  |  |
+   | ![rising](images/eq_uparrow.png) | 0 | 1 | 1 | Output did not change |
+   | ![rising](images/eq_uparrow.png) | 1 | 0 | 1 | Toggle |
+   | ![rising](images/eq_uparrow.png) | 1 | 1 | 0 | Toggle |
 
 <a name="part1"></a>
