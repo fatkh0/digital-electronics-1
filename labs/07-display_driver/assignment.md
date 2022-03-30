@@ -3,6 +3,9 @@
 
 ![Nexys](images/nexys.png)
 
+
+![Timing of seven-segment display](images/wavedrom_7-segment-1.png)
+
 ### Display driver
 
 1. Listing of VHDL code of the completed process `p_mux`. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
