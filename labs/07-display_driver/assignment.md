@@ -1,5 +1,8 @@
 # Lab 7: YOUR_FIRSTNAME LASTNAME
 
+
+![Nexys](images/nexys.png)
+
 ### Display driver
 
 1. Listing of VHDL code of the completed process `p_mux`. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
