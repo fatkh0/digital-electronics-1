@@ -10,7 +10,7 @@ Due to the physiological properties of human vision, it is necessary that the ti
   
   ![Nexys](images/nexys.png)
 
-  ![Timing of seven-segment display](images/wavedrom_7-segment.png)
+  ![Timing of seven-segment display](images/wavedrom_7-segment-1.png)
 
   > The figure above was created in [WaveDrom](https://wavedrom.com/) digital timing diagram online tool. The figure source code is as follows:
   >
