@@ -1,5 +1,6 @@
 # Lab 7: Erik Fatkhutdinov
 
+## Preparation tasks
 
 ![Nexys](images/nexys.png)
 
