@@ -22,3 +22,6 @@
 | JA8: E17   | JB8: F13   | JC8: J3  | JD8: G4  |
 | JA9: F18   | JB9: G13   | JC9: J4  | JD9: G2  |
 | JA10: G18  | JB10: H16  | JC10: E6 | JD10: F3 |
+
+
+![https://lastminuteengineers.com/seven-segment-arduino-tutorial/](../04-segment/images/7-Segment-Display-Number-Formation-Segment-Contol.png)
