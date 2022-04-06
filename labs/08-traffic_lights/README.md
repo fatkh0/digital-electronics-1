@@ -24,4 +24,5 @@
 | JA10: G18  | JB10: H16  | JC10: E6 | JD10: F3 |
 
 
-![https://lastminuteengineers.com/seven-segment-arduino-tutorial/](../04-segment/images/7-Segment-Display-Number-Formation-Segment-Contol.png)
+
+![Nexys](../07-display_driver/images/nexys.png)
