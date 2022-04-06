@@ -119,6 +119,50 @@
             end if; -- Synchronous reset
         end if; -- Rising edge
     end process p_traffic_fsm;
+    
+    
+    --------------------------------------------------------
+    -- p_output_fsm:
+    -- The combinatorial process is sensitive to state
+    -- changes and sets the output signals accordingly.
+    -- This is an example of a Moore state machine and
+    -- therefore the output is set based on the active state.
+    --------------------------------------------------------
+    p_output_fsm : process(s_state)
+    begin
+        case s_state is
+            when STOP1 =>
+                south_o <= c_RED;
+                west_o  <= c_RED;
+                
+            when WEST_GO =>
+                south_o <= c_RED;
+                west_o  <= c_GREEN;
+                
+            when WEST_WAIT =>
+                south_o <= c_RED;
+                west_o  <= c_YELLOW;
+            
+            when STOP2 => 
+                south_o <= c_RED;
+                west_o  <= c_RED;
+
+            when SOUTH_GO =>
+                south_o <= c_GREEN;
+                west_o  <= c_RED;
+
+
+            when SOUTH_WAIT => 
+                south_o <= c_YELLOW;
+                west_o  <= c_RED;
+            
+            when others =>
+                south_o <= c_RED;
+                west_o  <= c_RED;
+        end case;
+    end process p_output_fsm;
+
+end architecture Behavioral;
 ```
 
 3. Screenshot with simulated time waveforms. The full functionality of the entity must be verified. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
