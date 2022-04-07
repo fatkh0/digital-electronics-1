@@ -1,8 +1,5 @@
 # Lab 8: Erik Fatkhutdinov
 
-
-# Lab 8: Traffic light controller
-
 ## Preparation tasks (done before the lab at home)
 
 1. See [schematic](https://github.com/tomas-fryza/digital-electronics-1/blob/master/Docs/nexys-a7-sch.pdf) or [reference manual](https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/reference-manual) of the Nexys board and find out the connection of two RGB LEDs. How you can control them to get red, yellow, or green colors?
