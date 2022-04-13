@@ -1,9 +1,9 @@
-# YOUR_PROJECT_TITLE
+# Morse code transmitter, ie converter of characters/numbers to Morse code.
 
 ### Team members
 
-* Member 1 (responsible for xxx)
-* Member 2 (responsible for xxx)
+* Erik Fatkhutdinov (responsible for 214968)
+* Michal Kubant (responsible for 230608)
 * Member 3 (responsible for xxx)
 
 Link to your GitHub project folder:
