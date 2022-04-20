@@ -70,15 +70,6 @@ begin
             data1_i(1) => SW(5),
             data1_i(0) => SW(4),
             
-            data2_i(3) => SW(11),
-            data2_i(2) => SW(10),
-            data2_i(1) => SW(9),
-            data2_i(0) => SW(8),
-            
-            data3_i(3) => SW(15),
-            data3_i(2) => SW(14),
-            data3_i(1) => SW(13),
-            data3_i(0) => SW(12),
             
             dp_i => "0111",
             dp_o => DP,
@@ -91,7 +82,7 @@ begin
             seg_o(1) => CF,
             seg_o(0) => CG,
             
-            dig_o => AN(4 - 1 downto 0)
+            dig_o => AN(2 - 1 downto 0)
         );
 
      -- Disconnect the top four digits of the 7-segment display

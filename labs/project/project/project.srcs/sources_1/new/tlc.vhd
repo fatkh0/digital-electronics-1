@@ -24,13 +24,14 @@ use ieee.numeric_std.all;
 ------------------------------------------------------------
 -- Entity declaration for traffic light controller
 ------------------------------------------------------------
+
+
 entity tlc is
     port(
         clk     : in  std_logic;
         reset   : in  std_logic;
         -- Traffic lights (RGB LEDs) for two directions
-        south_o : out std_logic_vector(3 - 1 downto 0);
-        west_o  : out std_logic_vector(3 - 1 downto 0)
+        south_o : out std_logic
     );
 end entity tlc;
 
@@ -56,15 +57,13 @@ architecture Behavioral of tlc is
     signal s_cnt : unsigned(4 downto 0);
 
     -- Specific values for local counter
-    constant c_DELAY_4SEC : unsigned(4 downto 0) := b"1_1100";
-    constant c_DELAY_2SEC : unsigned(4 downto 0) := b"0_1000";
+    constant c_DELAY_7SEC : unsigned(4 downto 0) := b"1_1100";
+    constant c_DELAY_3SEC : unsigned(4 downto 0) := b"0_1100";
     constant c_DELAY_1SEC : unsigned(4 downto 0) := b"0_0100";
     constant c_ZERO       : unsigned(4 downto 0) := b"0_0000";
 
     -- Output values
     constant c_RED        : std_logic_vector(2 downto 0) := b"100";
-    constant c_YELLOW     : std_logic_vector(2 downto 0) := b"110";
-    constant c_GREEN      : std_logic_vector(2 downto 0) := b"010";
 
 begin
 
@@ -74,7 +73,7 @@ begin
     -- the frequency of the clock signal is 100 MHz.
     clk_en0 : entity work.clock_enable
         generic map(
-            g_MAX => 25000000  -- FOR SIMULATION PURPOSE ONLY !!!
+            g_MAX => 1  -- FOR SIMULATION PURPOSE ONLY !!!
             -- FOR IMPLEMENTATION: g_MAX = 250 ms / (1/100 MHz)
         )
         port map(
@@ -141,7 +140,7 @@ begin
                         
                     when SOUTH_GO =>
                         if (s_cnt < c_DELAY_4SEC) then
-                                s_cnt <= s_cnt + 1;
+                            s_cnt <= s_cnt + 1;
                         else
                             s_state <= SOUTH_WAIT;
                             s_cnt <= c_ZERO;
@@ -192,6 +191,7 @@ begin
             when SOUTH_GO =>
                 south_o <= c_GREEN;
                 west_o  <= c_RED;
+
 
             when SOUTH_WAIT => 
                 south_o <= c_YELLOW;
