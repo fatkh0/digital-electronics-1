@@ -4,7 +4,6 @@
 
 * Erik Fatkhutdinov (responsible for 214968)
 * Michal Kubant (responsible for 230608)
-* Member 3 (responsible for xxx)
 
 Link to your GitHub project folder:
 
