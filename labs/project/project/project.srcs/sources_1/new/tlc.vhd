@@ -124,7 +124,7 @@ begin
                         else
                             s_cnt <= c_ZERO;
                             s_state <= STOP;
-                        end if;
+                        end if;-------------------------------------------------------------------------------
                     
                     when B =>     
                          if (s_cnt < c_DELAY_3SEC) then --carka
@@ -137,7 +137,7 @@ begin
                         if (s_cnt < c_DELAY_3SEC) then --char delay
                             s_cnt <= s_cnt + 1;
                         else
-                            s_state <= c_RED;
+                            south_o <= c_RED;
                             s_cnt <= c_ZERO;
                         end if;
                         
@@ -152,7 +152,7 @@ begin
                         if (s_cnt < c_DELAY_3SEC) then --char delay
                             s_cnt <= s_cnt + 1;
                         else
-                            s_state <= c_RED;
+                            south_o <= c_RED;
                             s_cnt <= c_ZERO;
                         end if;
                             
@@ -167,7 +167,7 @@ begin
                         if (s_cnt < c_DELAY_3SEC) then --char delay
                             s_cnt <= s_cnt + 1;
                         else
-                            s_state <= c_RED;
+                            south_o <= c_RED;
                             s_cnt <= c_ZERO;
                         end if;
                             
@@ -184,11 +184,11 @@ begin
                         else
                             s_cnt <= c_ZERO;
                             s_state <= STOP;
-                        end if;       
+                        end if;       -----------------------------------------------------------------
                             
                     when STOP =>
-                        s_state <= c_GREEN; -- a naslouchat?!?
-        
+                        south_o <= c_GREEN; -- a naslouchat?!?
+                        
                     when others =>
                         s_state <= STOP;
                         s_cnt   <= c_ZERO;
