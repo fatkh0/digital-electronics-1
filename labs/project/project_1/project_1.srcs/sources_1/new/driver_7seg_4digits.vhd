@@ -1,4 +1,13 @@
-
+------------------------------------------------------------
+--
+-- Driver for 4-digit 7-segment display.
+-- Nexys A7-50T, Vivado v2020.1.1, EDA Playground
+--
+-- Copyright (c) 2020-Present Tomas Fryza
+-- Dept. of Radio Electronics, Brno Univ. of Technology, Czechia
+-- This work is licensed under the terms of the MIT license.
+--
+------------------------------------------------------------
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -43,10 +52,8 @@ entity driver_7seg_4digits is
         data1_i : in  std_logic_vector(4 - 1 downto 0);
         data2_i : in  std_logic_vector(4 - 1 downto 0);
         data3_i : in  std_logic_vector(4 - 1 downto 0);
-        
         -- 4-bit input value for decimal points
         dp_i    : in  std_logic_vector(4 - 1 downto 0);
-        
         -- Decimal point for specific digit
         dp_o    : out std_logic;
         -- Cathode values for individual segments
@@ -125,32 +132,27 @@ begin
             else
                 case s_cnt is
                     when "11" =>
-                       
                         s_hex <= data3_i;
                         dp_o  <= dp_i(3);
                         dig_o <= "0111";
 
-                    when "10" =>
-                       
-                        s_hex <= data2_i;
-                        dp_o  <= dp_i(2);
-                        dig_o <= "1011";
-                   
-                    when "01" =>
-                       
-                        s_hex <= data1_i;
-                        dp_o  <= dp_i(1);
-                        dig_o <= "1101";
-                  
-                    when others =>
-                        
-                        s_hex <= data0_i;
-                        dp_o  <= dp_i(0);
-                        dig_o <= "1110";
-               
-                end case;
+                   when "10" =>
+                s_hex <= data2_i;
+                dp_o  <= dp_i(2);
+                dig_o <= "1011";
+    
+                when "01" =>
+                    s_hex <= data1_i;
+                    dp_o  <= dp_i(1);
+                    dig_o <= "1101";
+
+                when others =>
+                    s_hex <= data0_i;
+                    dp_o  <= dp_i(0);
+                    dig_o <= "1110";
+            end case;
+                end if;
             end if;
-        end if;
     end process p_mux;
 
 end architecture Behavioral;
