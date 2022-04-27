@@ -41,12 +41,7 @@ end entity tlc;
 architecture Behavioral of tlc is
 
     -- Define the states
-    type t_state is (STOP1,
-                     WEST_GO,
-                     WEST_WAIT,
-                     STOP2,
-                     SOUTH_GO,
-                     SOUTH_WAIT);
+    type t_state is (A,B,STOP);
     -- Define the signal that uses different states
     signal s_state : t_state;
 
@@ -101,61 +96,101 @@ begin
                 -- to the delay value.
                 case s_state is
 
-                    -- If the current state is STOP1, then wait 1 sec
-                    -- and move to the next GO_WAIT state.
-                    when STOP1 =>
-                        -- Count up to c_DELAY_1SEC
-                        if (s_cnt < c_DELAY_1SEC) then
+                    when A =>
+                        if (s_cnt < c_DELAY_1SEC) then --tecka
+                            south_o <= c_RED;
                             s_cnt <= s_cnt + 1;
                         else
-                            -- Move to the next state
-                            s_state <= WEST_GO;
-                            -- Reset local counter value
-                            s_cnt <= c_ZERO;
-                        end if;
-                
-                    when WEST_GO =>
-                        if (s_cnt < c_DELAY_4SEC) then
-                            s_cnt <= s_cnt + 1;
-                        else
-                            s_state <= WEST_WAIT;
-                            s_cnt <= c_ZERO;
-                        end if;
-
-                    when WEST_WAIT =>
-                        if (s_cnt < c_DELAY_2SEC) then
-                            s_cnt <= s_cnt + 1;
-                        else
-                            s_state <= STOP2;
+                            south_o <= c_GREEN;
                             s_cnt <= c_ZERO;
                         end if;
                         
-                   when STOP2 =>
-                        if (s_cnt < c_DELAY_1SEC) then
+                        if (s_cnt < c_DELAY_3SEC) then --char delay
                             s_cnt <= s_cnt + 1;
                         else
-                            s_state <= SOUTH_GO;
+                            s_state <= c_RED;
                             s_cnt <= c_ZERO;
-                        end if;     
+                        end if;
                         
-                    when SOUTH_GO =>
-                        if (s_cnt < c_DELAY_4SEC) then
+                        if (s_cnt < c_DELAY_3SEC) then --carka
                             s_cnt <= s_cnt + 1;
                         else
-                            s_state <= SOUTH_WAIT;
+                            south_o <= c_GREEN;
                             s_cnt <= c_ZERO;
                         end if;
-
-                    when SOUTH_WAIT =>
-                        if (s_cnt < c_DELAY_2SEC) then
+                        
+                        if (s_cnt < c_DELAY_3SEC) then --word end
                             s_cnt <= s_cnt + 1;
                         else
-                            s_state <= STOP1;
+                            s_cnt <= c_ZERO;
+                            s_state <= STOP;
+                        end if;
+                    
+                    when B =>     
+                         if (s_cnt < c_DELAY_3SEC) then --carka
+                            s_cnt <= s_cnt + 1;
+                        else
+                            south_o <= c_GREEN;
                             s_cnt <= c_ZERO;
                         end if;
-
+                            
+                        if (s_cnt < c_DELAY_3SEC) then --char delay
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= c_RED;
+                            s_cnt <= c_ZERO;
+                        end if;
+                        
+                        if (s_cnt < c_DELAY_1SEC) then --tecka
+                            south_o <= c_RED;
+                            s_cnt <= s_cnt + 1;
+                        else
+                            south_o <= c_GREEN;
+                            s_cnt <= c_ZERO;
+                        end if;
+                        
+                        if (s_cnt < c_DELAY_3SEC) then --char delay
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= c_RED;
+                            s_cnt <= c_ZERO;
+                        end if;
+                            
+                         if (s_cnt < c_DELAY_1SEC) then --tecka
+                            south_o <= c_RED;
+                            s_cnt <= s_cnt + 1;
+                        else
+                            south_o <= c_GREEN;
+                            s_cnt <= c_ZERO;
+                        end if;
+                        
+                        if (s_cnt < c_DELAY_3SEC) then --char delay
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= c_RED;
+                            s_cnt <= c_ZERO;
+                        end if;
+                            
+                        if (s_cnt < c_DELAY_1SEC) then --tecka
+                            south_o <= c_RED;
+                            s_cnt <= s_cnt + 1;
+                        else
+                            south_o <= c_GREEN;
+                            s_cnt <= c_ZERO;
+                        end if;
+                        
+                        if (s_cnt < c_DELAY_3SEC) then --word end
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_cnt <= c_ZERO;
+                            s_state <= STOP;
+                        end if;       
+                            
+                    when STOP =>
+                        s_state <= c_GREEN; -- a naslouchat?!?
+        
                     when others =>
-                        s_state <= STOP1;
+                        s_state <= STOP;
                         s_cnt   <= c_ZERO;
                 end case;
             end if; -- Synchronous reset
@@ -172,7 +207,7 @@ begin
     p_output_fsm : process(s_state)
     begin
         case s_state is
-            when STOP1 =>
+            when STOP1 => --asci znak
                 south_o <= c_RED;
                 west_o  <= c_RED;
                 
