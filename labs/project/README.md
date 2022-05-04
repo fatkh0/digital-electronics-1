@@ -29,6 +29,7 @@ Morseova abeceda je vysílaný sousled teček a pomlček. V tomto projektu je im
 - tečka: zobrazována tak, že LED svítí sekundu červeně
 - pomlčka: LED svítí 3 sekundy červeně
 - prázdná linka: LED nesvítí (mezi znaky 1 sekubdu, a po každém symbolu 3 s)
+
 K realizaci jsme využívali pouze znalosti a námi vytvořené projekty z průběhu cvičení. Nepodařilo se nám ale správně propojit soubory tak, aby program správně pracoval. Projekt tedy demonstruje pouze funkčnost načítání vstupů, realizaci výstupů, a teoretickou funkci TOP modulu.
 
 
