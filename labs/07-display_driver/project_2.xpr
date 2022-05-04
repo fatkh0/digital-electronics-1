@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="D:/Documents/xfatkh00/digital-electronics-1/labs/project/project_1/project_1.xpr">
+<Project Version="7" Minor="49" Path="D:/Documents/xfatkh00/digital-electronics-1/labs/07-display_driver/project_2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="ff2ca6d4939648e18e358a96a97b8a87"/>
+    <Option Name="Id" Val="934c32d46dc14ea9b82d68dfc77c9da3"/>
     <Option Name="Part" Val="xc7a50ticsg324-1L"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -39,7 +39,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="nexys-a7-50t"/>
-    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTXSimLaunchSim" Val="7"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -70,66 +70,47 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/clock_enable.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../project/project.srcs/sources_1/new/clock_enable.vhd"/>
-          <Attr Name="ImportTime" Val="1651064671"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/display_driver/display_driver.srcs/sources_1/new/clock_enable.vhd"/>
+          <Attr Name="ImportTime" Val="1651669561"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/cnt_up_down.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../project/project.srcs/sources_1/new/cnt_up_down.vhd"/>
-          <Attr Name="ImportTime" Val="1651064671"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/display_driver/display_driver.srcs/sources_1/new/cnt_up_down.vhd"/>
+          <Attr Name="ImportTime" Val="1651669561"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/hex_7seg.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../project/project.srcs/sources_1/new/hex_7seg.vhd"/>
-          <Attr Name="ImportTime" Val="1651064671"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/display_driver/display_driver.srcs/sources_1/new/hex_7seg.vhd"/>
+          <Attr Name="ImportTime" Val="1651669561"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/driver_7seg_4digits.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../project/project.srcs/sources_1/new/driver_7seg_4digits.vhd"/>
-          <Attr Name="ImportTime" Val="1651064671"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/display_driver/display_driver.srcs/sources_1/new/driver_7seg_4digits.vhd"/>
+          <Attr Name="ImportTime" Val="1651669561"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/top.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../project/project.srcs/sources_1/new/top.vhd"/>
-          <Attr Name="ImportTime" Val="1651064671"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/tlc.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../project/project.srcs/sources_1/new/tlc.vhd"/>
-          <Attr Name="ImportTime" Val="1651064671"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/tick-counter.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../project/project.srcs/sources_1/new/tick-counter.vhd"/>
-          <Attr Name="ImportTime" Val="1651064671"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/display_driver/display_driver.srcs/sources_1/new/top.vhd"/>
+          <Attr Name="ImportTime" Val="1651669561"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="driver_7seg_4digits"/>
+        <Option Name="TopModule" Val="top"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
@@ -137,8 +118,8 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/new/nexys-a7-50t.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../project/project.srcs/constrs_1/new/nexys-a7-50t.xdc"/>
-          <Attr Name="ImportTime" Val="1651064671"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/display_driver/display_driver.srcs/constrs_1/new/nexys-a7-50t.xdc"/>
+          <Attr Name="ImportTime" Val="1651669561"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -149,9 +130,17 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/new/tb_driver_7seg_4digits.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd"/>
+          <Attr Name="ImportTime" Val="1651669561"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="driver_7seg_4digits"/>
+        <Option Name="TopModule" Val="tb_driver_7seg_4digits"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
@@ -190,16 +179,17 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="11">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a50ticsg324-1L" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a50ticsg324-1L" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a50ticsg324-1L" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a50ticsg324-1L" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
@@ -212,6 +202,7 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
