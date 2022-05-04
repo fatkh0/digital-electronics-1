@@ -7,7 +7,7 @@
 
 Link to your GitHub project folder:
 
-   [https://github.com/fatkh0/digital-electronics-1/tree/main/labs/project/project](Github link)
+   https://github.com/fatkh0/digital-electronics-1/tree/main/labs/project/project
 
 
 ### Table of contents
@@ -28,7 +28,7 @@ Po nastavení přepínačů by měl uživatel stisknout tlačítko na řídicí 
 Morseova abeceda je vysílaný sousled teček a pomlček. V tomto projektu je impuls na výstupu buď:
 - tečka: zobrazována tak, že LED svítí sekundu červeně
 - pomlčka: LED svítí 3 sekundy červeně
-- prázdná linka: LED svítí zeleně (mezi všemi znaky je taková mezera dlouhá 3s)
+- prázdná linka: LED nesvítí (mezi znaky 1 sekubdu, a po každém symbolu 3 s)
  K realizaci jsme využívali pouze znalosti a námi vytvořené projekty z průběhu cvičení. Nepodařilo se nám ale správně propojit soubory tak, aby program správně pracoval. Projekt tedy demonstruje pouze funkčnost načítání vstupů, realizaci výstupů, a teoretickou funkci TOP modulu.
 
 
@@ -39,7 +39,7 @@ Projekt využívá pouze desku Nexys A7-50T, a její integrované vstupní a vý
 K načítání vstupů je použito 8 mechanických přepínačů (SW[0 - 8]).
 K zobrazování vstupních hodnot dva sedmisegmentové displeje.
 K potvrzování dat prostřední tlačítko (BTNC).
-A pro zovrazování výstupních signálů RGB LED (LED16_R a LED16_G).
+A pro zovrazování výstupních signálů RGB LED (LED16_R).
 
 
 <a name="modules"></a>
