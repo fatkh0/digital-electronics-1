@@ -30,8 +30,6 @@ Morseova abeceda je vysílaný sousled teček a pomlček. V tomto projektu je im
 - pomlčka: LED svítí 3 sekundy červeně
 - prázdná linka: LED nesvítí (mezi znaky 1 sekubdu, a po každém symbolu 3 s)
 
-K realizaci jsme využívali pouze znalosti a námi vytvořené projekty z průběhu cvičení. Nepodařilo se nám ale správně propojit soubory tak, aby program správně pracoval. Projekt tedy demonstruje pouze funkčnost načítání vstupů, realizaci výstupů, a teoretickou funkci TOP modulu.
-
 
 <a name="hardware"></a>
 ## Hardware description
@@ -56,16 +54,17 @@ case logiky tak, aby na výstupu svítila vždy správná kombinace symbolickýc
 <a name="top"></a>
 ## TOP module description and simulations
 
-Write your text here.
+K realizaci jsme využívali pouze znalosti a námi vytvořené projekty z průběhu cvičení. Nepodařilo se nám ale správně propojit soubory tak, aby program správně pracoval. Projekt tedy demonstruje pouze funkčnost načítání vstupů, realizaci výstupů, a teoretickou funkci TOP modulu.
 
 
 <a name="video"></a>
 ## Video
 
-Write your text here
+https://youtu.be/hIFLk33CAKQ
 
 
 <a name="references"></a>
 ## References
 
-1. Write your text here.
+1. https://en.wikipedia.org/wiki/ASCII
+2. https://cs.wikipedia.org/wiki/Morseova_abeceda
