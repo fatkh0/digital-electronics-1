@@ -28,7 +28,7 @@ Po nastavení přepínačů by měl uživatel stisknout tlačítko na řídicí 
 Morseova abeceda je vysílaný sousled teček a pomlček. V tomto projektu je impuls na výstupu buď:
 - tečka: zobrazována tak, že LED svítí sekundu červeně
 - pomlčka: LED svítí 3 sekundy červeně
-- prázdná linka: LED nesvítí (mezi znaky 1 sekubdu, a po každém symbolu 3 s)
+- prázdná linka: LED nesvítí (mezi znaky 1 sekundu, a po každém symbolu 3 s)
 
 
 <a name="hardware"></a>
@@ -38,7 +38,7 @@ Projekt využívá pouze desku Nexys A7-50T, a její integrované vstupní a vý
 K načítání vstupů je použito 8 mechanických přepínačů (SW[0 - 8]).
 K zobrazování vstupních hodnot dva sedmisegmentové displeje.
 K potvrzování dat prostřední tlačítko (BTNC).
-A pro zovrazování výstupních signálů RGB LED (LED16_R).
+A pro zobrazování výstupních signálů RGB LED (LED16_R).
 
 
 <a name="modules"></a>
