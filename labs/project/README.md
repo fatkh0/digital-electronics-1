@@ -46,10 +46,10 @@ A pro zovrazování výstupních signálů RGB LED (LED16_R).
 <a name="modules"></a>
 ## VHDL modules description and simulations
 
-hex_7seg.vhd – převod čtyř vstupních bitů na sedm výstupních bitů tak, aby zobrazovali hexadecimální znak podle hodnoty na vstupu
-driver_7seg_4digits.vhd – přepínání sedmisegmentových displejů tak, aby bylo v reálném čase možné vidět svítit vice sedmisegmentových displejů najednou.
-clock_enable.vhd – řízení generátoru hodinového signálu, který využívají téměř všechny moduly projektu.
-tlc.vhd – modul určený k rozpoznávání vstupního znaku, a jeho následnému zpracování pomocí 
+- hex_7seg.vhd – převod čtyř vstupních bitů na sedm výstupních bitů tak, aby zobrazovali hexadecimální znak podle hodnoty na vstupu
+- driver_7seg_4digits.vhd – přepínání sedmisegmentových displejů tak, aby bylo v reálném čase možné vidět svítit vice sedmisegmentových displejů najednou.
+- clock_enable.vhd – řízení generátoru hodinového signálu, který využívají téměř všechny moduly projektu.
+- tlc.vhd – modul určený k rozpoznávání vstupního znaku, a jeho následnému zpracování pomocí 
 case logiky tak, aby na výstupu svítila vždy správná kombinace symbolických teček, čárek a mezer.
 
 
